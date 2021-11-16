@@ -1,0 +1,24 @@
+Prince George's 100,885
+Montgomery 83,700
+Baltimore 78,338
+Baltimore City 62,922
+Anne Arundel 54,185
+Frederick 25,019
+Howard 23,087
+Harford 21,387
+Washington 20,589
+Charles 14,731
+Carroll 12,273
+Wicomico 11,392
+St. Mary's 10,207
+Allegany 10,092
+Cecil 9,127
+Calvert 5,867
+Worcester 5,131
+Dorchester 4,270
+Queen Anne's 4,041
+Garrett 3,544
+Somerset 3,411
+Caroline 3,334
+Talbot 2,982
+Kent 1,828
