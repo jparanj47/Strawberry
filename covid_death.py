@@ -26,7 +26,7 @@ def read_and_create (filepath):
 def max_deaths (df):
      """ Creates a new dataframe for deaths greater than 2000 per state.
         Args:
-            ef: file to be read in. 
+            df: file to be read in. 
     """
 
     filter_deaths = df(df["Deaths"] > 2000) & (df.groupby("State"))
