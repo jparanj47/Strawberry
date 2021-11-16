@@ -23,7 +23,7 @@ def read_and_create (filepath):
     plt.title("COVID-19 Deaths per State.")
     plt.show()
     
-def max_deaths (self, df):
+def max_deaths (df):
      """ Creates a new dataframe for deaths greater than 2000 per state.
         Args:
             ef: file to be read in. 
