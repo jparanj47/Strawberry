@@ -47,4 +47,3 @@ def top_state_cases(df):
     return top_states
                 
 readfile("us-states.csv")
-yo
