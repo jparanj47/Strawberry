@@ -1,19 +1,20 @@
 import matplotlib.pyplot as plt
-  
-counties = []
-cases = []
-  
-f = open('umdCounty.txt','r')
-for row in f:
-    row = row.split(' ')
-    counties.append(row[0])
-    cases.append(float(int(row[0])))
-  
-plt.bar(counties, cases, color = 'g', label = 'File Data')
-  
-plt.xlabel('County', fontsize = 12)
-plt.ylabel('Case Number', fontsize = 12)
-  
-plt.title('Cases per County', fontsize = 20)
+import csv
+
+x = []
+y = []
+
+with open('maryland-history.csv') as csvFile:
+    plot = csv.reader(csvFile, delimiter = ',')
+    
+    for row in plot:
+        x.append(row[0])
+        y.append(int(row[2]))
+        
+plt.bar(x, y, color = 'g', width = 0.72, label = "Deaths")
+plt.xlabel('Dates')
+plt.ylabel('Death count')
+plt.title('Death count per Date')
 plt.legend()
 plt.show()
+    
