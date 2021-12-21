@@ -5,10 +5,18 @@ from matplotlib import pyplot as plt
 import math
 import numpy as np
 
-#Create class covid graph
+
 class Covid_Graph:
+    """ This is class is meant to store covid data to create a Covid-19 info graph"""
 
     def plot_data(self, x1, y1, y2):
+        """ This function is meant to plot data in a matplotlib graph
+        Args:
+            x1: months during the pandemic
+            y1: the number of deaths of covid patients during the pandemic
+            y2: the number of recovered of covid patients during the pandemic
+        Returns: Figure 1 - 'Covid deaths compared to recovred patients'
+        """
         #styling for graphs
         x_indexes = np.arange(len(x1))
         # plot points
@@ -27,6 +35,10 @@ class Covid_Graph:
 
     #Added self to method
     def get_data(self, data_file):
+        """ This function is meant to read in the data file
+        Args:
+            data_file: csv file containing maryland covid data
+        """
         #set data equl to pandas.read_csv('data')
         data = pd.read_csv(data_file)
         #set column names = data['column_names']
