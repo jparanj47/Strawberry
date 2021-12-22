@@ -5,6 +5,14 @@ import csv
 x = []
 y = []
 def positiveCasePerCountyGraph(csvData):
+    """Initializes and creates graph for positive cases per Maryland county. 
+    
+    Args: 
+        csvData: Must put proper .csv file into argument.
+        
+    Returns: 
+        Graph object 
+        """
     with open(csvData) as csvFile:
         plot = csv.reader(csvFile, delimiter = ',')
         

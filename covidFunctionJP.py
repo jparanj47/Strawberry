@@ -1,9 +1,19 @@
+import numpy as np
 import matplotlib.pyplot as plt
 import csv
 
 x = []
 y = []
+
 def deathPerCountyGraph(csvData):
+    """Initializes and creates graph for deaths per Maryland county. 
+    
+    Args: 
+        csvData: Must put proper .csv file into argument.
+        
+    Returns: 
+        Graph object 
+        """
     with open(csvData) as csvFile:
         plot = csv.reader(csvFile, delimiter = ',')
         
@@ -19,3 +29,5 @@ def deathPerCountyGraph(csvData):
     plt.show()
         
 deathPerCountyGraph('maryland-covid.csv')
+
+
