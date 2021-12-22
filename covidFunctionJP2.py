@@ -4,9 +4,8 @@ import csv
 
 x = []
 y = []
-
-def deathPerCountyGraph(csvData):
-    """Initializes and creates graph for deaths per Maryland county. 
+def positiveCasePerCountyGraph(csvData):
+    """Initializes and creates graph for positive cases per Maryland county. 
     
     Args: 
         csvData: Must put proper .csv file into argument.
@@ -19,15 +18,13 @@ def deathPerCountyGraph(csvData):
         
         for row in plot:
             x.append(row[0])
-            y.append(int(row[2]))
+            y.append(int(row[21]))
             
-    plt.bar(x, y, color = 'g', width = 0.72, label = "Deaths")
+    plt.bar(x, y, color = 'g', width = 0.72, label = "Cases")
     plt.xlabel('Dates')
-    plt.ylabel('Death count')
-    plt.title('Death count per Date')
+    plt.ylabel('Case count')
+    plt.title('Case count per Date')
     plt.legend()
     plt.show()
-        
-deathPerCountyGraph('maryland-covid.csv')
 
-
+positiveCasePerCountyGraph('maryland-covid.csv')
